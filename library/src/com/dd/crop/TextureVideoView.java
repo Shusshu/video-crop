@@ -98,7 +98,7 @@ public class TextureVideoView extends TextureView implements TextureView.Surface
         float scaleX = 1.0f;
         float scaleY = 1.0f;
 
-        if (mVideoWidth > viewWidth && mVideoHeight > viewHeight) {
+        if (mVideoWidth >= viewWidth && mVideoHeight >= viewHeight) {
             scaleX = mVideoWidth / viewWidth;
             scaleY = mVideoHeight / viewHeight;
         } else if (mVideoWidth < viewWidth && mVideoHeight < viewHeight) {
